@@ -186,7 +186,7 @@ extern HardwareSPI SPI;
         #if defined(ARDUINO_ARCH_ESP32) // do not `undef` when using the espressif SDK only
             #undef printf_P             // needed for ESP32 core
         #endif
-        #define printf_P Serial.printf
+        //#define printf_P Serial.printf
     #elif defined(ARDUINO) && !defined(ESP_PLATFORM) && !defined(__arm__) && !defined(__ARDUINO_X86__) || defined(XMEGA)
         #include <avr/pgmspace.h>
         #define PRIPSTR "%S"
